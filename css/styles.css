@@ -6,19 +6,23 @@ ul {
   display: flex;
 }
 
-ul li a {
+li {
+  float: left;
+}
+
+li a {
   display: block;
   color: white;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul li a:hover {
+li a:hover {
   background-color: #04AA6D;
 }
 
-llli a:hover:not(.active) {
-  background-color: #111;
+li a:hover:not(.active) {
+  background-color: #008080;
 }
 
 .active {
