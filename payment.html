@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple JavaScript Calculator</title>
+
+    <script>
+      function calc() {
+        let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+      }
+    </script>
+  </head>
+  <body>
+
+    <h3>This is a simple JavaScript and HTML calculator.</h3>
+
+    <p><input id="PV"> Loan amount ($) </p>
+    <p><input id="r"> Loan length in years </p>
+    <p><input id="n">% - Annual interest rate </p>
+    <p>
+      <button onclick="calc()"> Calculate Your Monthly Payment </button>
+    </p>
+    <p>
+      Your answer is: <span id="ans"> ___________ </span>
+    </p>
+    
+  </body>
+</html>
