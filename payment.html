@@ -10,7 +10,10 @@
         let r= document.getElementById("r").value;
         
         let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-        document.getElementById("ans").innerHTML = "With a loan of $" + PV + " over " + n + " years, with an annual interest rate of " + r + "%, your payment will be $" + P.toFixed(2)".";
+        document.getElementById("loan").innerHTML = PV;
+        document.getElementById("years").innerHTML = n;
+        document.getElementById("rate").innerHTML = r;
+        document.getElementById("ans").innerHTML = P.toFixed(2);
       }
     </script>
   </head>
@@ -25,7 +28,7 @@
       <button onclick="calc()"> Calculate Your Monthly Payment </button>
     </p>
     <p>
-      Answer:<span id="ans"> ___ </span>
+      With a loan of $<span id="loan">___</span> over <span id="years">___</span> years, with an annual interest rate of <span id="rate">___</span>%, your payments will be <span id="ans">___</span>.
     </p>
     
   </body>
