@@ -5,9 +5,9 @@
 
     <script>
       function calc() {
-        let PV= document.getElementById("PV").innerHTML
-        let n= document.getElementById("n").innerHTML
-        let r= document.getElementById("r").innerHTML
+        let PV= document.getElementById("PV")
+        let n= document.getElementById("n")
+        let r= document.getElementById("r")
         
         let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
         document.getElementById("ans").innerHTML = P.toFixed(2);
