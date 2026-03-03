@@ -5,6 +5,10 @@
 
     <script>
       function calc() {
+        let PV= document.getElementById("PV").innerHTML
+        let n= document.getElementById("n").innerHTML
+        let r= document.getElementById("r").innerHTML
+        
         let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
         document.getElementById("ans").innerHTML = P.toFixed(2);
       }
@@ -15,8 +19,8 @@
     <h3>This is a simple JavaScript and HTML calculator.</h3>
 
     <p><input id="PV"> Loan amount ($) </p>
-    <p><input id="r"> Loan length in years </p>
-    <p><input id="n">% - Annual interest rate </p>
+    <p><input id="n"> Loan length in years </p>
+    <p><input id="r">% - Annual interest rate </p>
     <p>
       <button onclick="calc()"> Calculate Your Monthly Payment </button>
     </p>
